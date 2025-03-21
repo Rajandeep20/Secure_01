@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Numbers</title>
+</head>
+<body>
+    <h1>Even or Odd Numbers (1 to 10)</h1>
+    <ul id="numberList"></ul>
+
+    <script>
+        const numberList = document.getElementById("numberList");
+
+        for (let i = 1; i <= 10; i++) {
+            let listItem = document.createElement("li");
+            listItem.textContent = `${i} is ${i % 2 === 0 ? "Even" : "Odd"}`;
+            numberList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
